@@ -10,12 +10,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  List<Widget> screens = [
-    const WeatherPage(),
-    SettingsPage(
-      onIndexChanged: () {},
-    )
-  ];
+  List<Widget> screens = [const WeatherPage(), const SettingsPage()];
   int _selectedIndex = 0;
 
   BottomNavigationBar buildBottomNavigationBar() {
